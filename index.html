@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jankerzone.GitHub.io by jankerzone</title>
+    <title>Robby Sanjaya Muhammad \\ Blog</title>
+    <link href='http://iqra.jankerzone.com/favicon.ico' rel='icon' type='image/x-icon'/>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!--    <script src="/javascripts/bukaksitik.js"></script>-->
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
@@ -12,22 +14,18 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body ng-app="">
+  <body ng-app ng-init="subPage = 'posts/hello.html'">
     <div class="wrapper">
       <header>
-        <h1>Jankerzone.GitHub.io</h1>
-        <h3>Just another Blog in another Planet</h3>
-        <p>
-          Link 1 <br/>
-          Link 2 <br/>
-        </p>
-
-
+        <h1>Robsan {Web.Dev}</h1>
+        <h3>Hanya Ingin Tekun Beribadah</h3>
+          <a href ng-click="subPage = 'posts/2-web-kamu.html'">> Web Kamu Harus Mobile Responsive</a><br/>
+          <a href ng-click="subPage = 'posts/hello.html'">> Hai Hallo</a><br/>
+          <br/>
         <p class="view"><a href="https://github.com/jankerzone">View My GitHub Profile</a></p>
-
       </header>
       <section>
-<div ng-include="'posts/hello.html'"></div>
+<div ng-include="subPage"></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a> &mdash; Written by Robby S. Muhammad</small></p>
