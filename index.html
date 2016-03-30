@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Jankerzone.GitHub.io by jankerzone</title>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
@@ -12,21 +12,22 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="">
     <div class="wrapper">
       <header>
         <h1>Jankerzone.GitHub.io</h1>
-        <p>Just another Blog in another Planet</p>
+        <h3>Just another Blog in another Planet</h3>
+        <p>
+          Link 1 <br/>
+          Link 2 <br/>
+        </p>
 
 
         <p class="view"><a href="https://github.com/jankerzone">View My GitHub Profile</a></p>
 
       </header>
       <section>
-        <h1>
-<a id="jankerzonegithubio" class="anchor" href="#jankerzonegithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jankerzone.github.io</h1>
-
-<p>Just another Blog in another Planet</p>
+<div ng-include="'posts/hello-world.html'"></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
