@@ -17,9 +17,9 @@
 			})
 
 			// route for the about page
-			.when('/about', {
-				templateUrl : 'pages/about.html',
-				controller  : 'aboutController'
+			.when('/try', {
+				templateUrl : 'pages/try.html',
+				controller  : 'tryController'
 			})
 
 			// route for the contact page
