@@ -1,2 +1,2 @@
 # jankerzone.github.io
-Just another Blog in another Planet
+Hanya Blogging Plaftorm Pribadi Milik Saya Sendiri (HBPPMSS)
